@@ -1,0 +1,69 @@
+.headerWrapper {
+  background-color: #010c1e;
+  padding: 35px 5px;
+  
+  /* position: fixed;
+  top: 0;
+  width: 100%;
+  margin-bottom: 100px; */
+}
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.navContainer {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  align-items: center;
+}
+.navContainer li {
+  margin-left: 15px;
+}
+.navContainer li:first-child {
+  margin-left: 0px;
+}
+.navContainer li:hover > a {
+  opacity: 0.7;
+}
+.navContainer li > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.9px;
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.btnPrimary {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  padding: 10px 10px;
+  background-color: #010c1e;
+}
+.btnPrimary:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+.btnSecondary {
+  color: #ffffff;
+  border: 1px solid #ff6602;
+  border-radius: 1px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 0.5s ease-in-out;
+  opacity: 1;
+  padding: 10px 10px;
+  background: #ff6602;
+}
+.btnSecondary:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
