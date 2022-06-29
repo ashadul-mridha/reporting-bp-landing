@@ -16,33 +16,47 @@ a {
 }
 
 /* selection effect  */
-h2::selection{
-  background-color: #FF865E;
+h2::selection {
+  background-color: #ff865e;
   color: #ffffff;
 }
-h3::selection{
-  background-color: #FF865E;
+h3::selection {
+  background-color: #ff865e;
   color: #ffffff;
 }
-h4::selection{
-  background-color: #FF865E;
+h4::selection {
+  background-color: #ff865e;
   color: #ffffff;
 }
-p::selection{
-  background-color: #FF865E;
+p::selection {
+  background-color: #ff865e;
   color: #ffffff;
 }
-
 
 /* global styles  */
-.btnprimary{
+.btnprimary {
   color: #ffffff;
-  background-color: #FF6602;
-  border: 10px solid #FF6602;
-  border-radius: 5px;
+  background-color: #F15822;
+  border: 2px solid #F15822;
+  border-radius: 10px;
   padding: 8px 18px;
   font-weight: 700;
   font-size: 21px;
   text-transform: uppercase;
   margin: 10px 0px;
+}
+.btnsecondary {
+  color: #010c1e;
+  background-color: #ffffff;
+  border: 2px solid #010c1e;
+  border-radius: 10px;
+  padding: 8px 18px;
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+}
+.btnsecondary:hover {
+  color: #ffffff;
+  background-color: #010c1e;
 }
