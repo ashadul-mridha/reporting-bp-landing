@@ -67,7 +67,7 @@ const SpeedSheetFeature = ({ className, data }) => {
           <div className={`featureImage`}>
             <video
               src="https://reachreporting.com/wp-content/uploads/2020/08/Spreadsheets.mp4"
-              controls={true}
+              controls={true}              
               autoPlay={true}
             />
           </div>

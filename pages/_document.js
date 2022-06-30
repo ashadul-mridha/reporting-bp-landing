@@ -27,7 +27,7 @@ class MyDocument extends Document {
             src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
             strategy="lazyOnload" 
             />
-            {/* <Script src="https://kit.fontawesome.com/b98d090fd4.js" strategy="lazyOnload" /> */}
+            <Script src="https://kit.fontawesome.com/b98d090fd4.js" strategy="lazyOnload" />
 
         </Head>
         <body>
