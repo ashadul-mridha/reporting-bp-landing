@@ -1,4 +1,9 @@
 const FreeTrail = () => {
+  function getCapital(x){
+    return function(y){
+      return (x * y) / 100;
+    }
+  }
   return (
     <>
       <div className="freetrailwrapper">
