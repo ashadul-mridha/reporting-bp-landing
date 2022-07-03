@@ -1,9 +1,5 @@
 const FreeTrail = () => {
-  function getCapital(x){
-    return function(y){
-      return (x * y) / 100;
-    }
-  }
+  
   return (
     <>
       <div className="freetrailwrapper">
@@ -16,7 +12,7 @@ const FreeTrail = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="d-flex justify-content-around">
+              <div className="d-flex justify-content-around flex-column flex-lg-row">
                 <button className="btnprimary">
                   Start My 30 days free trail
                 </button>

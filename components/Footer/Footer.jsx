@@ -7,10 +7,10 @@ const Footer = () => {
     <>
       <div className={styles.footerWrapper}>
         <div className="container">
-          <div className="row gx-5 align-items-start">
-            <div className="col-md-6">
+          <div className="row gx-5 gy-3 justify-content-center align-items-start">
+            <div className="col-lg-6 col-12">
               <div className={styles.newsletterSection}>
-                <h4>ReachReport</h4>
+                <h4>BPLanding</h4>
                 <p>Newsletter Signup*</p>
                 <form action="">
                   <input
@@ -25,7 +25,7 @@ const Footer = () => {
                 </form>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-lg-2 col-6">
               <div className={styles.otherLinks}>
                 <h6>OTHER LINKS</h6>
                 <ul>
@@ -77,7 +77,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-lg-2 col-6">
               <div className={styles.intregrations}>
                 <h6>Intregrations</h6>
                 <ul>
@@ -111,11 +111,9 @@ const Footer = () => {
                       <a>gusto</a>
                     </Link>
                   </li>
-                  <li>
-                    <Link href="#">
-                      <a>comparisons</a>
-                    </Link>
-                  </li>
+                </ul>
+                <h6 className="my-3">comparisons</h6>
+                <ul>
                   <li>
                     <Link href="#">
                       <a>soptlight</a>
@@ -144,7 +142,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-md-2">
+            <div className="col-lg-2 col-12">
               <div className={styles.contactus}>
                 <h6>Contact us</h6>
                 <ul>

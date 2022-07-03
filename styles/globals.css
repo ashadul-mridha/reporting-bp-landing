@@ -40,11 +40,12 @@ p::selection {
 /* global styles  */
 .btnprimary {
   color: #ffffff;
-  background-color: #F15822;
-  border: 2px solid #F15822;
+  background-color: #f15822;
+  border: 2px solid #f15822;
   border-radius: 10px;
   padding: 8px 18px;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
   font-size: 21px;
   text-transform: uppercase;
   margin: 10px 0px;
@@ -56,6 +57,7 @@ p::selection {
   border-radius: 10px;
   padding: 8px 18px;
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
   font-size: 21px;
   text-transform: uppercase;
   margin: 10px 0px;
@@ -63,4 +65,19 @@ p::selection {
 .btnsecondary:hover {
   color: #ffffff;
   background-color: #010c1e;
+}
+
+@media only screen and (max-width: 991px) {
+  .btnprimary {
+    padding: 11px 18px;
+    font-size: 18px;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .btnsecondary {
+    padding: 11px 18px;
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+  }
 }

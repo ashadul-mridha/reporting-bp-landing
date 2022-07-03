@@ -4,7 +4,7 @@ import { FaSwatchbook } from "react-icons/fa";
 const Feature = ({ className, data }) => {
   return (
     <>
-      <div className="container">
+      <div className="container-md">
         <style jsx>{`
           .featureWrapper {
             display: grid;
@@ -26,11 +26,11 @@ const Feature = ({ className, data }) => {
           .featureContentTitle {
             font-size: 41px;
             font-weight: 800;
-            color: #000000;
+            color: #1c355e;
             letter-spacing: 1.2px;
             padding: 10px 0px;
             font-family: "Poppins", sans-serif;
-            text-shadow: #f08c67 -4px 0, #1c355e 4px 0;
+            // text-shadow: #f08c67 -4px 0, #1c355e 4px 0;
           }
           .featureContentSubTitle {
             font-size: 19px;
@@ -49,7 +49,7 @@ const Feature = ({ className, data }) => {
           .featureContentList {
             font-size: 25px;
             font-weight: 500;
-            font-family: "Open Sans", sans-serif;
+            font-family: "Poppins", sans-serif;
             text-transform: uppercase;
             color: #f08c67;
           }
@@ -62,6 +62,13 @@ const Feature = ({ className, data }) => {
             color: #1c355e;
             background-color: #d3d0d0;
             cursor: pointer;
+          }
+
+          @media only screen and (max-width: 991px) {
+            .featureWrapper {
+              grid-template-columns: repeat(1, 1fr);
+              padding: 30px 0px;
+            }
           }
         `}</style>
         <div className={`featureWrapper ${className}`}>

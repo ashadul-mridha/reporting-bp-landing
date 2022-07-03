@@ -3,7 +3,7 @@ import { FaSwatchbook } from "react-icons/fa";
 const SpeedSheetFeature = ({ className, data }) => {
   return (
     <>
-      <div className="container">
+      <div className="container-md">
         <style jsx>{`
           .featureWrapper {
             display: grid;
@@ -25,11 +25,11 @@ const SpeedSheetFeature = ({ className, data }) => {
           .featureContentTitle {
             font-size: 41px;
             font-weight: 800;
-            color: #000000;
+            color: #1c355e;
             letter-spacing: 1.2px;
             padding: 10px 0px;
             font-family: "Poppins", sans-serif;
-            text-shadow: #f08c67 -4px 0, #1c355e 4px 0;
+            // text-shadow: #f08c67 -4px 0, #1c355e 4px 0;
           }
           .featureContentSubTitle {
             font-size: 19px;
@@ -62,12 +62,24 @@ const SpeedSheetFeature = ({ className, data }) => {
             background-color: #d3d0d0;
             cursor: pointer;
           }
+          @media only screen and (max-width: 991px) {
+            .featureWrapper {
+              grid-template-columns: repeat(1, 1fr);
+              padding: 30px 0px;
+            }
+            .featureWrapper.reverse > .featureImage {
+              order: 0;
+            }
+            .featureWrapper.reverse > .featureContent {
+              order: 1;
+            }
+          }
         `}</style>
         <div className={`featureWrapper reverse`}>
           <div className={`featureImage`}>
             <video
               src="https://reachreporting.com/wp-content/uploads/2020/08/Spreadsheets.mp4"
-              controls={true}              
+              controls={true}
               autoPlay={true}
             />
           </div>
