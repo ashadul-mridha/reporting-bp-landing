@@ -12,7 +12,7 @@ const Header = () => {
           @media only screen and (max-width: 991px) {
             .navBar {
               position: absolute;
-              top: 105px;
+              top: 100px;
               left: 0;
               width: 100%;
               background-color: #010c1e;
