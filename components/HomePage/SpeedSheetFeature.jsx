@@ -3,7 +3,7 @@ import { FaSwatchbook } from "react-icons/fa";
 const SpeedSheetFeature = ({ className, data }) => {
   return (
     <>
-      <div className="container-md">
+      <div className="container">
         <style jsx>{`
           .featureWrapper {
             display: grid;
@@ -62,26 +62,37 @@ const SpeedSheetFeature = ({ className, data }) => {
             background-color: #d3d0d0;
             cursor: pointer;
           }
+          .featuresVideo {
+            width: 100%;
+            height: 400px;
+          }
           @media only screen and (max-width: 991px) {
             .featureWrapper {
               grid-template-columns: repeat(1, 1fr);
               padding: 30px 0px;
             }
-            .featureWrapper.reverse > .featureImage {
-              order: 0;
-            }
-            .featureWrapper.reverse > .featureContent {
-              order: 1;
+            .featuresVideo {
+              width: 100%;
+              height: 300px;
             }
           }
         `}</style>
         <div className={`featureWrapper reverse`}>
           <div className={`featureImage`}>
-            <video
+            <div className="embed-responsive embed-responsive-16by9">
+              <iframe
+                className={`embed-responsive-item featuresVideo`}
+                src="https://reachreporting.com/wp-content/uploads/2020/08/Spreadsheets.mp4"
+                allowFullScreen
+                controls={true}
+                autoPlay={true}
+              ></iframe>
+            </div>
+            {/* <video
               src="https://reachreporting.com/wp-content/uploads/2020/08/Spreadsheets.mp4"
               controls={true}
               autoPlay={true}
-            />
+            /> */}
           </div>
           <div className={"featureContent"}>
             <h2 className={"featureContentTitle"}>
